@@ -1,0 +1,57 @@
+main {
+    .sistC {
+        width: 90%;
+        margin: auto;
+        h2 {
+            animation-name: anima;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+            animation-delay: 0s;
+            @keyframes anima {
+                20% {
+                    color: rgb(185, 247, 247);
+                }
+                40% {
+                    color: rgb(159, 243, 243);
+                }
+                60% {
+                    color: rgb(129, 247, 247);
+                }
+                80% {
+                    color: rgb(159, 243, 243);
+                    ;
+                }
+                90% {
+                    color: rgb(201, 247, 247);
+                }
+                100% {
+                    color: rgb(227, 248, 248);
+                }
+            }
+        }
+        .wood {
+            display: flex;
+            padding: 10px;
+            img {
+                margin-right: 15px;
+            }
+            p {
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+                line-height: 2rem;
+                font-size: 1.5rem;
+            }
+        }
+        .steel {
+            display: flex;
+            padding: 10px;
+            img {
+                margin-left: 15px;
+            }
+            p {
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+                line-height: 2rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
