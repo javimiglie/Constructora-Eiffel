@@ -1,10 +1,5 @@
                 main {
                     .menu1 {
-                        margin: 30px auto;
-                        height: auto;
-                        width: 80%;
-                        display: flex;
-                        flex-direction: row;
                         div {
                             img {
                                 padding: 10px;
@@ -26,11 +21,6 @@
                         }
                     }
                     .menu2 {
-                        margin: 30px auto;
-                        height: 250px;
-                        width: 80%;
-                        display: flex;
-                        flex-direction: row;
                         .caja1 {
                             background-color: white;
                             color: black;
@@ -57,13 +47,9 @@
                             }
                         }
                         .caja2 {
-                            background-color: white;
-                            color: black;
-                            text-align: center;
-                            margin: 10px;
-                            transition: 2s;
+                            @extend .caja1;
                             &:hover {
-                                background-color: aquamarine;
+                                background-color: lightskyblue;
                             }
                             div {
                                 h3 {
@@ -82,13 +68,9 @@
                             }
                         }
                         .caja3 {
-                            background-color: white;
-                            color: black;
-                            text-align: center;
-                            margin: 10px;
-                            transition: 2s;
+                            @extend .caja1;
                             &:hover {
-                                background-color: aquamarine;
+                                background-color: teal;
                             }
                             div {
                                 h3 {

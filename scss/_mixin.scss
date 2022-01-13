@@ -1,0 +1,34 @@
+@mixin menuIndex ($height) {
+    margin: 30px auto;
+    height: $height;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu1 {
+    @include menuIndex(auto)
+}
+
+.menu2 {
+    @include menuIndex(260px)
+}
+
+@mixin color-sist ($color) {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: $color;
+}
+
+.wood {
+    p {
+        @include color-sist(lightblue)
+    }
+}
+
+.steel {
+    p {
+        @include color-sist(aqua)
+    }
+}
