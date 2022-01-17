@@ -1,0 +1,3 @@
+- 8/1 y 9/1 arme el proyecto completo con Sass
+- 12/1 agregue Keywords y descripción. Además en el index agregué contenido real y saque lorem
+- 13/1 agregue extend y mixin

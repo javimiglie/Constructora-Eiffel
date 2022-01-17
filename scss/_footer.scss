@@ -1,8 +1,27 @@
-footer {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    line-height: 2rem;
-    font-size: 1.5rem;
-    text-align: center;
-    color: rgb(171, 248, 240);
-    margin: 20px;
-}
+        footer {
+            ul {
+                list-style-type: none;
+                margin: 5px auto;
+                text-align: center;
+                li {
+                    display: inline-block;
+                    text-align: center;
+                    a {
+                        display: inline-block;
+                        margin: 20px;
+                        transition: 1.5s;
+                        &:hover {
+                            transform: scale(1.2, 1.2);
+                        }
+                    }
+                }
+            }
+            p {
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+                line-height: 2rem;
+                font-size: 1.5rem;
+                text-align: center;
+                color: rgb(171, 248, 240);
+                margin: 20px;
+            }
+        }

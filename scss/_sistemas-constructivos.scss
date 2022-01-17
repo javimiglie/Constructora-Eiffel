@@ -44,4 +44,133 @@ main {
             }
         }
     }
+    section {
+        h2 {
+            color: $colorClaro;
+            font-family: 'Roboto Slab', serif;
+            font-size: 2.5rem;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+    }
+    .ventajas {
+        width: 90%;
+        margin: auto;
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 0.5fr 0.3fr 1fr;
+        grid-column-gap: 20px;
+        grid-template-areas: "ecoImg rapImg segImg eneImg durImg" "ecoTitulo rapTitulo segTitulo eneTitulo durTitulo" "ecoTexto rapTexto segTexto eneTexto durTexto";
+        .ecoImg {
+            grid-area: ecoImg;
+            img {
+                &:hover {
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    box-shadow: 0px 0px 15px 15px #1e70ec;
+                    -webkit-box-shadow: 0px 0px 15px 15px #1e5fec;
+                }
+            }
+        }
+        .ecoTitulo {
+            grid-area: ecoTitulo;
+        }
+        .ecoTexto {
+            grid-area: ecoTexto;
+        }
+        .rapImg {
+            grid-area: rapImg;
+            img {
+                &:hover {
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    box-shadow: 0px 0px 15px 15px #1e70ec;
+                    -webkit-box-shadow: 0px 0px 15px 15px #1e5fec;
+                }
+            }
+        }
+        .rapTitulo {
+            grid-area: rapTitulo;
+        }
+        .rapTexto {
+            grid-area: rapTexto;
+        }
+        .segImg {
+            grid-area: segImg;
+            img {
+                &:hover {
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    box-shadow: 0px 0px 15px 15px #1e70ec;
+                    -webkit-box-shadow: 0px 0px 15px 15px #1e5fec;
+                }
+            }
+        }
+        .segTitulo {
+            grid-area: segTitulo;
+        }
+        .segTexto {
+            grid-area: segTexto;
+        }
+        .eneImg {
+            grid-area: eneImg;
+            img {
+                &:hover {
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    box-shadow: 0px 0px 15px 15px #1e70ec;
+                    -webkit-box-shadow: 0px 0px 15px 15px #1e5fec;
+                }
+            }
+        }
+        .eneTitulo {
+            grid-area: eneTitulo;
+        }
+        .eneTexto {
+            grid-area: eneTexto;
+        }
+        .durImg {
+            grid-area: durImg;
+            img {
+                &:hover {
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    box-shadow: 0px 0px 15px 15px #1e70ec;
+                    -webkit-box-shadow: 0px 0px 15px 15px #1e5fec;
+                }
+            }
+        }
+        .durTitulo {
+            grid-area: durTitulo;
+        }
+        .durTexto {
+            grid-area: durTexto;
+        }
+        img {
+            width: 80%;
+            align-items: center;
+            img {
+                &:hover {
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    box-shadow: 0px 0px 15px 15px #1e70ec;
+                    -webkit-box-shadow: 0px 0px 15px 15px #1e5fec;
+                }
+            }
+        }
+        h3 {
+            color: $colorCeleste;
+            font-family: 'Roboto Slab', serif;
+            font-size: 2rem;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+        p {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            line-height: 2rem;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
 }
