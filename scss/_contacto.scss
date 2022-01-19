@@ -1,7 +1,37 @@
 main {
     width: 100%;
     .contacto {
-        width: 95%;
+        padding-top: 25px;
+        width: 90%;
         margin: auto;
+    }
+    .showrooms {
+        padding: 20px;
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        .card {
+            background-color: rgb(5, 11, 50);
+            width: 330px;
+            height: 430px;
+            border-radius: 8px;
+            box-shadow: 0 2px 2px rgb(62, 134, 243);
+            overflow: hidden;
+            margin: 20px;
+            text-align: center;
+            transition: all 0.25s;
+            &:hover {
+                transform: translateY(-15px);
+                box-shadow: 0 12px 16px rgb(62, 134, 243);
+            }
+        }
+        img {
+            width: 330px;
+            height: 220px;
+        }
     }
 }
