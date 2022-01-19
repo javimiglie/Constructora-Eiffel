@@ -41,7 +41,7 @@
                                     font-family: 'Yanone Kaffeesatz', sans-serif;
                                     line-height: 2rem;
                                     font-size: 1.5rem;
-                                    color: $colorP;
+                                    color: black;
                                     margin: 10px 10px;
                                 }
                             }
@@ -62,7 +62,7 @@
                                     font-family: 'Yanone Kaffeesatz', sans-serif;
                                     line-height: 2rem;
                                     font-size: 1.5rem;
-                                    color: $colorP;
+                                    color: black;
                                     margin: 10px 10px;
                                 }
                             }
@@ -70,7 +70,7 @@
                         .caja3 {
                             @extend .caja1;
                             &:hover {
-                                background-color: teal;
+                                background-color: rgb(14, 165, 165);
                             }
                             div {
                                 h3 {
@@ -83,7 +83,7 @@
                                     font-family: 'Yanone Kaffeesatz', sans-serif;
                                     line-height: 2rem;
                                     font-size: 1.5rem;
-                                    color: $colorP;
+                                    color: black;
                                     margin: 10px 10px;
                                 }
                             }
