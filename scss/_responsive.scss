@@ -1,204 +1,213 @@
-    @media only screen and (max-width: 1024px) {
-        body {
-            width: 100%;
-            h2 {
-                font-size: 2rem;
-                letter-spacing: 3px;
+@media only screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+        h2 {
+            font-size: 2rem;
+            letter-spacing: 3px;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        .menu1 {
+            width: 90%;
+            margin: auto;
+            flex-wrap: wrap;
+            justify-content: center;
+            p {
+                margin: auto;
             }
+            img {
+                width: 400px;
+                margin: auto;
+            }
+        }
+        .menu2 {
+            width: 90%;
+            height: auto;
+        }
+        .menu3 {
+            width: 95%;
+        }
+        .galeriaModelos {
+            width: 90%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 30px;
+            img {
+                &:hover {
+                    transform: scale(1.1, 1.1);
+                }
+            }
+        }
+        .sistC {
+            width: 90%;
+            .wood {
+                width: 90%;
+                flex-wrap: wrap;
+                img {
+                    width: 300px;
+                    margin: auto;
+                    justify-content: center;
+                }
+            }
+            .steel {
+                width: 90%;
+                flex-wrap: wrap;
+                img {
+                    width: 300px;
+                    margin: auto;
+                    justify-content: center;
+                }
+            }
+        }
+        .ventajas {
+            width: 90%;
+            margin: auto;
+            grid-column-gap: 5px;
             h3 {
-                font-size: 1.5rem;
+                font-size: 1rem;
             }
             p {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
-            .menu1 {
-                width: 90%;
-                margin: auto;
-                flex-wrap: wrap;
-                justify-content: center;
-                p {
-                    margin: auto;
-                }
-                img {
-                    width: 400px;
-                    margin: auto;
-                }
-            }
-            .menu2 {
-                width: 90%;
-                height: auto;
-            }
-            .galeriaModelos {
-                width: 90%;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr;
-                gap: 30px;
-                img {
-                    &:hover {
-                        transform: scale(1.1, 1.1);
-                    }
-                }
-            }
-            .sistC {
-                width: 90%;
-                .wood {
-                    width: 90%;
-                    flex-wrap: wrap;
+        }
+        .proyectosRealizados {
+            .carousel-inner {
+                .carousel-item {
                     img {
-                        width: 300px;
-                        margin: auto;
-                        justify-content: center;
-                    }
-                }
-                .steel {
-                    width: 90%;
-                    flex-wrap: wrap;
-                    img {
-                        width: 300px;
-                        margin: auto;
-                        justify-content: center;
-                    }
-                }
-            }
-            .ventajas {
-                width: 90%;
-                margin: auto;
-                grid-column-gap: 5px;
-                h3 {
-                    font-size: 1rem;
-                }
-                p {
-                    font-size: 1rem;
-                }
-            }
-            .proyectosRealizados {
-                .carousel-inner {
-                    .carousel-item {
-                        img {
-                            height: 250px;
-                        }
+                        height: 250px;
                     }
                 }
             }
         }
-        @media only screen and (max-width: 600px) {
-            body {
-                width: 100%;
-                main {
-                    video {
-                        display: none;
+        footer {
+            a {
+                margin: 5px;
+            }
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        body {
+            width: 100%;
+            main {
+                video {
+                    display: none;
+                }
+                h2 {
+                    font-size: 1.5rem;
+                    letter-spacing: 3px;
+                }
+                h3 {
+                    font-size: 1.3rem;
+                }
+                .menu2 {
+                    flex-wrap: wrap;
+                }
+                .galeriaModelos {
+                    width: 90%;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                    gap: 10px;
+                }
+                .ventajas {
+                    width: 90%;
+                    grid-template-columns: 0.3fr 1fr;
+                    grid-template-rows: 0.2fr 0.5fr 0.2fr 0.5fr 0.2fr 0.5fr 0.2fr 0.5fr 0.2fr 0.5fr;
+                    grid-column-gap: 5px;
+                    grid-row-gap: 10px;
+                    grid-template-areas: "ecoImg ecoTitulo" "ecoImg ecoTexto" "rapImg rapTitulo" "rapImg rapTexto" "segImg segTitulo" "segImg segTexto" "eneImg eneTitulo" "eneImg eneTexto" "durImg durTitulo" "durImg durTexto";
+                    .ecoImg {
+                        grid-area: ecoImg;
+                        img {
+                            width: 100%;
+                            align-items: center;
+                        }
                     }
-                    h2 {
-                        font-size: 1.5rem;
-                        letter-spacing: 3px;
+                    .ecoTitulo {
+                        grid-area: ecoTitulo;
+                        h2 {
+                            font-size: 1rem;
+                        }
                     }
-                    h3 {
-                        font-size: 1.3rem;
+                    .ecoTexto {
+                        grid-area: ecoTexto;
+                        p {
+                            font-size: 1rem;
+                            text-align: center;
+                        }
                     }
-                    .menu2 {
-                        flex-wrap: wrap;
+                    .rapImg {
+                        grid-area: rapImg;
+                        img {
+                            width: 100%;
+                        }
                     }
-                    .galeriaModelos {
-                        width: 90%;
-                        grid-template-columns: 1fr;
-                        grid-template-rows: 1fr 1fr 1fr 1fr;
-                        gap: 10px;
+                    .rapTitulo {
+                        grid-area: rapTitulo;
                     }
-                    .ventajas {
-                        width: 90%;
-                        grid-template-columns: 0.3fr 1fr;
-                        grid-template-rows: 0.2fr 0.5fr 0.2fr 0.5fr 0.2fr 0.5fr 0.2fr 0.5fr 0.2fr 0.5fr;
-                        grid-column-gap: 5px;
-                        grid-row-gap: 10px;
-                        grid-template-areas: "ecoImg ecoTitulo" "ecoImg ecoTexto" "rapImg rapTitulo" "rapImg rapTexto" "segImg segTitulo" "segImg segTexto" "eneImg eneTitulo" "eneImg eneTexto" "durImg durTitulo" "durImg durTexto";
-                        .ecoImg {
-                            grid-area: ecoImg;
+                    .rapTexto {
+                        grid-area: rapTexto;
+                    }
+                    .segImg {
+                        grid-area: segImg;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .segTitulo {
+                        grid-area: segTitulo;
+                    }
+                    .segTexto {
+                        grid-area: segTexto;
+                    }
+                    .eneImg {
+                        grid-area: eneImg;
+                        img {
+                            width: 90%;
+                        }
+                    }
+                    .eneTitulo {
+                        grid-area: eneTitulo;
+                    }
+                    .eneTexto {
+                        grid-area: eneTexto;
+                    }
+                    .durImg {
+                        grid-area: durImg;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .durTitulo {
+                        grid-area: durTitulo;
+                    }
+                    .durTexto {
+                        grid-area: durTexto;
+                    }
+                }
+                .proyectosRealizados {
+                    .carousel-inner {
+                        .carousel-item {
                             img {
-                                width: 100%;
-                                align-items: center;
-                            }
-                        }
-                        .ecoTitulo {
-                            grid-area: ecoTitulo;
-                            h2 {
-                                font-size: 1rem;
-                            }
-                        }
-                        .ecoTexto {
-                            grid-area: ecoTexto;
-                            p {
-                                font-size: 1rem;
-                                text-align: center;
-                            }
-                        }
-                        .rapImg {
-                            grid-area: rapImg;
-                            img {
-                                width: 100%;
-                            }
-                        }
-                        .rapTitulo {
-                            grid-area: rapTitulo;
-                        }
-                        .rapTexto {
-                            grid-area: rapTexto;
-                        }
-                        .segImg {
-                            grid-area: segImg;
-                            img {
-                                width: 100%;
-                            }
-                        }
-                        .segTitulo {
-                            grid-area: segTitulo;
-                        }
-                        .segTexto {
-                            grid-area: segTexto;
-                        }
-                        .eneImg {
-                            grid-area: eneImg;
-                            img {
-                                width: 90%;
-                            }
-                        }
-                        .eneTitulo {
-                            grid-area: eneTitulo;
-                        }
-                        .eneTexto {
-                            grid-area: eneTexto;
-                        }
-                        .durImg {
-                            grid-area: durImg;
-                            img {
-                                width: 100%;
-                            }
-                        }
-                        .durTitulo {
-                            grid-area: durTitulo;
-                        }
-                        .durTexto {
-                            grid-area: durTexto;
-                        }
-                    }
-                    .proyectosRealizados {
-                        .carousel-inner {
-                            .carousel-item {
-                                img {
-                                    height: 175px;
-                                }
+                                height: 175px;
                             }
                         }
                     }
-                    footer {
-                        ul {
-                            li {
-                                a {
-                                    margin: 5px;
-                                }
-                            }
+                }
+            }
+            footer {
+                ul {
+                    margin: 10px;
+                    li {
+                        a {
+                            margin: 1px;
                         }
                     }
                 }
             }
         }
     }
+}
