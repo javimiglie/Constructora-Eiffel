@@ -7,11 +7,13 @@ body {
   background-image: linear-gradient(black, #050542);
   color: white; }
 
-header nav ul {
-  margin: 5px auto;
-  text-align: center; }
-  header nav ul li a {
-    font-family: 'Yanone Kaffeesatz', sans-serif; }
+header {
+  font-family: 'Roboto Slab', serif; }
+  header nav ul {
+    margin: 5px auto;
+    text-align: center; }
+    header nav ul li a {
+      font-family: 'Yanone Kaffeesatz', sans-serif; }
 
 main .menu1 div img {
   padding: 10px; }
