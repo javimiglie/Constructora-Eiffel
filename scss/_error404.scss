@@ -1,5 +1,6 @@
 main {
-    .conteiner {
+    min-height: 1000px;
+    .contenedor {
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -13,6 +14,7 @@ main {
         }
         div {
             padding: 30px;
+            font-family: 'Roboto Slab', serif;
         }
         .button {
             text-decoration: none;

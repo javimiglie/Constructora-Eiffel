@@ -9,6 +9,8 @@ body {
 
 header {
   font-family: 'Roboto Slab', serif; }
+  header nav h1 {
+    font-size: 2rem; }
   header nav ul {
     margin: 5px auto;
     text-align: center; }
@@ -293,7 +295,7 @@ main {
     main .proyectosRealizados .conteiner .card {
       background-color: #050b32;
       width: 330px;
-      height: 430px;
+      height: auto;
       border-radius: 8px;
       box-shadow: 0 2px 2px #3e86f3;
       overflow: hidden;
@@ -361,29 +363,32 @@ footer {
     color: #abf8f0;
     margin: 20px; }
 
-main .conteiner {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  align-items: center;
-  justify-content: center; }
-  main .conteiner img {
-    width: 50%; }
-  main .conteiner h2 {
-    font-size: 1.3rem; }
-  main .conteiner div {
-    padding: 30px; }
-  main .conteiner .button {
-    text-decoration: none;
-    padding: 13px 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px #3e86f3;
-    border: none;
-    transition: 0.25s;
-    background-color: #050b32;
-    color: white; }
-    main .conteiner .button:hover {
-      box-shadow: 0 12px 16px #3e86f3; }
+main {
+  min-height: 1000px; }
+  main .contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center; }
+    main .contenedor img {
+      width: 50%; }
+    main .contenedor h2 {
+      font-size: 1.3rem; }
+    main .contenedor div {
+      padding: 30px;
+      font-family: 'Roboto Slab', serif; }
+    main .contenedor .button {
+      text-decoration: none;
+      padding: 13px 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 2px #3e86f3;
+      border: none;
+      transition: 0.25s;
+      background-color: #050b32;
+      color: white; }
+      main .contenedor .button:hover {
+        box-shadow: 0 12px 16px #3e86f3; }
 
 @media only screen and (max-width: 1024px) {
   body {
@@ -449,6 +454,8 @@ main .conteiner {
 @media only screen and (max-width: 1024px) and (max-width: 600px) {
   body {
     width: 100%; }
+    body nav h1 {
+      font-size: 1.5rem; }
     body main video {
       display: none; }
     body main h2 {
