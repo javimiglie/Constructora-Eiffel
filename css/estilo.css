@@ -45,8 +45,8 @@ main .menu2 .caja1, main .menu2 .caja2, main .menu2 .caja3 {
     padding: 10px; }
   main .menu2 .caja1 div p, main .menu2 .caja2 div p, main .menu2 .caja3 div p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    line-height: 2;
-    font-size: 1.5;
+    line-height: 1.2em;
+    font-size: 1.3em;
     color: black;
     margin: 10px 10px; }
 
@@ -59,8 +59,8 @@ main .menu2 .caja2 div h3 {
 
 main .menu2 .caja2 div p {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  line-height: 2;
-  font-size: 1.5;
+  line-height: 1.2em;
+  font-size: 1.3em;
   color: black;
   margin: 10px 10px; }
 
@@ -73,8 +73,8 @@ main .menu2 .caja3 div h3 {
 
 main .menu2 .caja3 div p {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  line-height: 2;
-  font-size: 1.5;
+  line-height: 1.2em;
+  font-size: 1.3em;
   color: black;
   margin: 10px 10px; }
 
